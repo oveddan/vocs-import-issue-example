@@ -1,0 +1,48 @@
+## Example with direct include
+
+:::code-group
+
+```ts twoslash [example.ts]
+// [!include ~/snippets/example.ts]
+```
+
+```ts twoslash [config.ts] filename="config.ts"
+// [!include ~/snippets/config.ts]
+```
+
+:::
+
+## Example with incline code
+
+:::code-group
+
+```ts twoslash [example.ts]
+import { publicClient } from "./config";
+
+console.log(publicClient);
+```
+
+```ts twoslash [config.ts] filename="config.ts"
+// [!include ~/snippets/config.ts]
+```
+
+:::
+
+## Example with explicit include
+
+:::code-group
+
+```ts twoslash [example.ts]
+// @filename: config.ts
+// [!include ~/snippets/config.ts]
+
+// @filename: example.ts
+// ---cut---
+// [!include ~/snippets/example.ts]
+```
+
+```ts twoslash [config.ts] filename="config.ts"
+// [!include ~/snippets/config.ts]
+```
+
+:::
